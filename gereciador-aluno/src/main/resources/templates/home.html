@@ -16,17 +16,17 @@
 				<th scope="col">Nome</th>
 				<th scope="col">CPF</th>
 				<th scope="col">Email</th>
-				<th scope="col">Id</th>
+				<th scope="col">Curso</th>
 				<th scope="col"></th>
 			</tr>
 
 			<!-- Modificar -->
-			<tr th:each="vet : ${alunos}">
+			<tr th:each="aluno : ${alunos}">
 				<th scope="row"></th>
 				<td><span th:text="${aluno.nome}"></span></td>
-				<td><span th:text="${aluno.cpf}"></span></td>
+				<td><span th:text="${aluno.curso}"></span></td>
 				<td><span th:text="${aluno.email}"></td>
-				<td>R$<span th:text="${aluno.id}"></span></td>
+				<td>CPF<span th:text="${aluno.cpf}"></span></td>
 				<td class="buttons "><a th:href="@{form/{id}(id=${aluno.id})}"
 					th:method="get" class="btn btn-warning"><i class="fa fa-pencil"></i></a>
 					<a th:href="@{delete/{id}(id=${aluno.id})}" th:method="delete"
