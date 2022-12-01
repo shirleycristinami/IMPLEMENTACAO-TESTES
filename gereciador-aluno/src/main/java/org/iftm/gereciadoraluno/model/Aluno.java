@@ -22,7 +22,7 @@ public class Aluno {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int cpf;
+	private int id;
 	private String nome;
 	private String email;
 	private String curso;
