@@ -26,10 +26,10 @@
 				<td><span th:text="${aluno.nome}"></span></td>
 				<td><span th:text="${aluno.curso}"></span></td>
 				<td><span th:text="${aluno.email}"></td>
-				<td>CPF<span th:text="${aluno.cpf}"></span></td>
-				<td class="buttons "><a th:href="@{form/{id}(id=${aluno.cpf})}"
+				<td>id<span th:text="${aluno.id}"></span></td>
+				<td class="buttons "><a th:href="@{form/{id}(id=${aluno.id})}"
 					th:method="get" class="btn btn-warning"><i class="fa fa-pencil"></i></a>
-					<a th:href="@{delete/{id}(id=${aluno.cpf})}" th:method="delete"
+					<a th:href="@{delete/{id}(id=${aluno.id})}" th:method="delete"
 					class="btn btn-danger"><i class="fa fa-trash"></i></a></td>
 			</tr>
 		</table>
