@@ -24,9 +24,9 @@
 			<tr th:each="aluno : ${alunos}">
 				<th scope="row"></th>
 				<td><span th:text="${aluno.nome}"></span></td>
-				<td><span th:text="${aluno.curso}"></span></td>
+				<td><span th:text="${aluno.id}"></span></td>
 				<td><span th:text="${aluno.email}"></td>
-				<td>id<span th:text="${aluno.id}"></span></td>
+				<td><span th:text="${aluno.curso}"></span></td>
 				<td class="buttons "><a th:href="@{form/{id}(id=${aluno.id})}"
 					th:method="get" class="btn btn-warning"><i class="fa fa-pencil"></i></a>
 					<a th:href="@{delete/{id}(id=${aluno.id})}" th:method="delete"
